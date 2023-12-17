@@ -133,6 +133,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL.cpp" />
+    <ClCompile Include="solar_system.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="solar_system.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
