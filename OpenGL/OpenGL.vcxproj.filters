@@ -21,9 +21,15 @@
     <ClCompile Include="solar_system.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shaders_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="solar_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders_test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

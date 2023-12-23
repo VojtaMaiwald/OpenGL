@@ -8,8 +8,8 @@ void solar_system::drawCircle(float red, float green, float blue) {
 	float oldX = 0.0f, oldY = 1.0f;
 
 	for (int i = 0; i <= segments; i++) {
-		float newX = cos(angle * i) * radius;
-		float newY = sin(angle * i) * radius;
+		float newX = cosf(angle * i) * radius;
+		float newY = sinf(angle * i) * radius;
 
 		glBegin(GL_TRIANGLES);
 		glColor3f(red, green, blue);
@@ -29,7 +29,7 @@ void solar_system::draw() {
 	glScalef(0.2f, 0.2f, 1.f);
 
 	while (!glfwWindowShouldClose(window)) {
-		glClearColor(0.1, 0.1, 0.1, 0);
+		glClearColor(0.1f, 0.1f, 0.1f, 0.f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		drawCircle(1.0f, 0.75f, 0.0f);

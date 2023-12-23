@@ -1,6 +1,8 @@
+
+
+//#include "solar_system.h"
+#include "shaders_test.h"
 #include <iostream>
-#include <GLFW\glfw3.h>
-#include "solar_system.h"
 
 int main()
 {
@@ -21,8 +23,11 @@ int main()
 
 	glfwMakeContextCurrent(window);
 
-	solar_system solar_system(window);
-	solar_system.draw();
+	//solar_system solar_system(window);
+	//solar_system.draw();
+
+	shaders_test shaders_test(window);
+	shaders_test.draw();
 
 	glfwTerminate();
 	return 0;
