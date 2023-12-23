@@ -10,5 +10,21 @@ class shaders_test
 
 	private:
 		GLFWwindow* window;
+		GLfloat vertices[18] = {
+			-1.0f, -1.0f, 0.0f,
+			 1.0f, -1.0f, 0.0f,
+			 1.0f,  1.0f, 0.0f,
+			-1.0f, -1.0f, 0.0f,
+			 1.0f,  1.0f, 0.0f,
+			-1.0f,  1.0f, 0.0f
+		};
+		GLfloat colors[18] = {
+			0.0f, 0.0f, 1.0f,
+			0.0f, 1.0f, 0.0f,
+			1.0f, 0.0f, 0.0f,
+			0.0f, 0.0f, 1.0f,
+			1.0f, 0.0f, 0.0f,
+			0.0f, 1.0f, 0.0f
+		};
 };
 

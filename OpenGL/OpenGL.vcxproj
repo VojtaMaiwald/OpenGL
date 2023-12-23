@@ -106,7 +106,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;GLEW_STATIC</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;GLEW_STATIC;_CRT_SECURE_NO_DEPRECATE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <AdditionalIncludeDirectories>.libs\glfw\include;.\libs\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -139,10 +139,17 @@
     <ClCompile Include="OpenGL.cpp" />
     <ClCompile Include="shaders_test.cpp" />
     <ClCompile Include="solar_system.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="macros.h" />
     <ClInclude Include="shaders_test.h" />
     <ClInclude Include="solar_system.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basic_fragment.frag" />
+    <None Include="basic_vertex.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

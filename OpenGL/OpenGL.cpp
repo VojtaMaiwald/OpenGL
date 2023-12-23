@@ -9,7 +9,7 @@ int main()
 	GLFWwindow* window;
 
 	if (!glfwInit()) {
-		std::cout << "Error";
+		std::cout << "glfwInit Error";
 		exit(-1);
 	}
 
